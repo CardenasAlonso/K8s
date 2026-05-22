@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cardenasalonso-api-service
+  namespace: cardenasalonso-api-ns
+  labels:
+    app: cardenasalonso-api
+spec:
+  selector:
+    app: cardenasalonso-api
+  type: NodePort
+  ports:
+    - port: 8085
+      protocol: TCP
+      targetPort: 8085
+      nodePort: 3080

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: hancel-cardenas-rest
+
+  r2dbc:
+    url: r2dbc:h2:men:///testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: ${SECRET_USERNAME:sa}
+    password: ${SECRET_PASSWORD:password}
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+
+
+server:
+  port: ${APP_PORT:8085}
