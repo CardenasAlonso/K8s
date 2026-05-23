@@ -11,6 +11,7 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/api/personas")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class PersonaRest {
 
     private final PersonaService service;
@@ -20,7 +21,7 @@ public class PersonaRest {
         return service.findAll();
     }
 
-    @GetMapping("/{id}") // Añadido /{id}
+    @GetMapping("/{id}")
     public Mono<Persona> getByID(@PathVariable Long id) {
         return service.findById(id);
     }

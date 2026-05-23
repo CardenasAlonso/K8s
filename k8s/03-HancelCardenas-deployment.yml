@@ -27,28 +27,28 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   key: APP_ENV
-                  name: alonsocardenas-api-configmap
+                  name: cardenasalonso-api-configmap
             - name: APP_VERSION
               valueFrom:
                 configMapKeyRef:
                   key: APP_VERSION
-                  name: alonsocardenas-api-configmap
+                  name: cardenasalonso-api-configmap
             - name: APP_PORT
               valueFrom:
                 configMapKeyRef:
                   key: APP_PORT
-                  name: alonsocardenas-api-configmap
+                  name: cardenasalonso-api-configmap
 
             - name: SECRET_USERNAME
               valueFrom:
                 secretKeyRef:
                   key: username
-                  name: alonsocardenas-api-secret
+                  name: cardenasalonso-api-secret
             - name: SECRET_PASSWORD
               valueFrom:
                 secretKeyRef:
                   key: password
-                  name: alonsocardenas-api-secret
+                  name: cardenasalonso-api-secret
 
 
 

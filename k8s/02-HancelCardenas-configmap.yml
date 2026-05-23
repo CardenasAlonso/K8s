@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: alonsocardenas-api-configmap
-  namespace: alonsocardenas-api-ns
+  name: cardenasalonso-api-configmap
+  namespace: cardenasalonso-api-ns
   labels:
     app: cardenasalonso-api
 

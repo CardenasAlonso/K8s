@@ -11,12 +11,12 @@ import org.springframework.data.relational.core.mapping.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table("personas")
+@Table(name = "PERSONAS")
 public class Persona {
 
     @Id
     private Long id;
-    private String name;
+    private String nombre;
     private String apellido;
     private String email;
 }

@@ -33,7 +33,7 @@ public class PersonaServiceImpl implements PersonaService {
     public Mono<Persona> update(Long id, Persona persona) {
         return repository.findById(id)
                 .flatMap(existing -> {
-                    existing.setName(persona.getName());
+                    existing.setNombre(persona.getNombre());
                     existing.setApellido(persona.getApellido());
                     existing.setEmail(persona.getEmail());
                     return repository.save(existing);
